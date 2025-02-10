@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class BucketSort implements AlgoritmoOrdenamiento {
+public class BucketSort implements AlgoritmosOrdenamiento {
     public void ordenar(int[] datos) {
         int max = Arrays.stream(datos).max().getAsInt();
         List<Integer>[] buckets = new List[max / 10 + 1];
@@ -21,4 +21,5 @@ public class BucketSort implements AlgoritmoOrdenamiento {
             }
         }
     }
+    
 }
